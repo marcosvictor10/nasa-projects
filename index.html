@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Nasa Projects</title>
+  <p>Veja o console (f12)</p>
+</head>
+<body>
+  <script defer>
+    const searchQuery = 'project-mercury' // 'project-gemini' ou 'project-apollo'
+    fetch ("https://images-api.nasa.gov/search?q=" + searchQuery + "&media_type=image", { method: "GET" })
+      .then(response => response.json())
+      .then(response => {
+        const items = response.collection.items
+          .map(item => { 
+            return  { 
+              href: item.links[0].href,
+              title: item.data[0].title
+            }
+          })
+        console.log('searchQuery: '+ searchQuery, items)
+      })
+      .catch(error => console.error(message))
+  </script>
+</body>
+</html>
