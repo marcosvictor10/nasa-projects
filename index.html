@@ -3,24 +3,22 @@
 <head>
   <meta charset='utf-8'>
   <title>Nasa Projects</title>
-  <p>Veja o console (f12)</p>
+   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <script defer>
-    const searchQuery = 'project-mercury' // 'project-gemini' ou 'project-apollo'
-    fetch ("https://images-api.nasa.gov/search?q=" + searchQuery + "&media_type=image", { method: "GET" })
-      .then(response => response.json())
-      .then(response => {
-        const items = response.collection.items
-          .map(item => { 
-            return  { 
-              href: item.links[0].href,
-              title: item.data[0].title
-            }
-          })
-        console.log('searchQuery: '+ searchQuery, items)
-      })
-      .catch(error => console.error(message))
-  </script>
+  <div id="container">
+    <div class="content">
+      <p>Abra o console do seu browser (aperte f12)</p>
+      <button id="btn-mercury" type="button" onclick="getNasa('project-mercury', this)">mercury</button>
+      <button id="btn-gemini" type="button" onclick="getNasa('project-gemini', this)">gemini</button>
+      <button id="btn-apollo" type="button" onclick="getNasa('project-apollo', this)">apollo</button>
+      <button id="btn-reset" type="button" onclick="resetButtons(['btn-mercury', 'btn-gemini', 'btn-apollo'], this)" disabled>reset</button>
+      <div class="preloader">Carregando...</div>
+      <ul id="result">
+        <!-- Monte aqui a sua lista de imagens da NASA -->
+      </ul>
+    </div>
+  </div>
+  <script src="main.js" defer></script>
 </body>
 </html>

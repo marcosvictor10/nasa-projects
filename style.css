@@ -1,0 +1,2 @@
+.preloader { display: none }
+#container.fetching .preloader{ display: block }
