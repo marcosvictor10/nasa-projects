@@ -1,16 +1,16 @@
 # Nasa Projects
 > Teste para vaga de estágio para desenvolvimento frontend na São Paulo Urbanismo.
 
-Olá! Muito obrigado pelo seu interesse em trabalhar conosco. 
+Olá! Agradecemos o seu interesse em estagiar conosco. 
 
-Este teste tem como objetivo avaliar as suas habilidades de trabalhar colaborativamente com git/github e, principalmente, avaliar seus conhecimentos nos fundamentos das tecnologias de desenvolvimento frontend: **html**, **css** e **javascript**. 
+Este teste tem como objetivo avaliar sua capacidade de utilizar git/github e, principalmente, avaliar seus conhecimentos nos fundamentos das tecnologias de desenvolvimento frontend: **html**, **css** e **javascript**. 
 
 Boa sorte!
 
 ## Desafio NASA
-O seu desafio será trabalhar com a API de mídias da NASA. A agência aeroespacial dos EUA.
+O seu desafio será consumir a API de mídias da NASA. A agência aeroespacial dos EUA.
 
- __Se nunca trabalhou com uma API antes não se preocupe__. No arquivo [main.js](main.js) já fizemos a requisição para você. (veja o método `getNasa`)
+ __Se nunca consumiu uma API antes não se preocupe__. No arquivo [main.js](main.js) já fizemos a requisição para você. (veja o método `getNasa`)
 
 Você deverá criar uma aplicação com dois estados. Uma antes de clicar e outra após clicar.
 
@@ -37,7 +37,7 @@ Será necessário saber um pouco sobre os seguintes tópicos:
 O objetivo deste desafio é avaliar apenas os **fundamentos** (html, css e js). Portanto para fazermos uma avaliação justa, será necessário que você siga algumas regras:
  - **Não crie nenhum arquivo neste repositório** apenas altere os arquivos __index.html__, __main.js__ e __style.css__.
  - **Não utilize cdns, npm ou cópias locais de libs externas**. Queremos ver o seu código apenas com vanilla js e css.
- - É implícito da regra anterior mas enfatizando: __não utilize bootstrap css nem jQuery__.
+ - É implícito na regra anterior, mas enfatizando: __não utilize bootstrap css nem jQuery__.
  - **Não se preocupe com IE**. A avaliação será feita na última versão do [firefox dev edition](https://www.mozilla.org/en-US/firefox/developer/). Portanto você pode e deve usar boa parte da nova api do ecmascript (e utilizar __let__ e __const__, por exemplo).
 
 
@@ -70,5 +70,5 @@ function setNasa (nasaItems, listId) {
 
 
 ## Obrigado!
-Se chegou até aqui é porque você está realmente interessado. Se tiver dúvidas em relação ao processo envie um email para <a href="mailto:treinamento@spurbanismo.sp.gov.br?subject=vaga%20est&aacute;gio%20frontend">treinamento@spurbanismo.sp.gov.br</a>.
+Se chegou até aqui é porque você está realmente interessado e preparado. Se tiver dúvidas em relação ao processo envie um email para <a href="mailto:treinamento@spurbanismo.sp.gov.br?subject=vaga%20est&aacute;gio%20frontend">treinamento@spurbanismo.sp.gov.br</a>.
 
