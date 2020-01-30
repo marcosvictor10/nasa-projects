@@ -6,19 +6,23 @@
    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    
+    
   <div id="container">
     <div class="content">
       <p>Abra o console do seu browser (aperte f12)</p>
-      <button id="btn-mercury" type="button" onclick="getNasa('project-mercury', this)">mercury</button>
+      <button id="btn-mercury" type="button" onclick="getNasa('project-mercury', this)" flex-direction=column>mercury</button>
       <button id="btn-gemini" type="button" onclick="getNasa('project-gemini', this)">gemini</button>
       <button id="btn-apollo" type="button" onclick="getNasa('project-apollo', this)">apollo</button>
       <button id="btn-reset" type="button" onclick="resetButtons(['btn-mercury', 'btn-gemini', 'btn-apollo'], this)" disabled>reset</button>
       <div class="preloader">Carregando...</div>
-      <ul id="result">
-        <!-- Monte aqui a sua lista de imagens da NASA -->
-      </ul>
+        <section class="container row">
+            <ul id="result">
+            </ul>
+        </section>
     </div>
-  </div>
+    </div>
+    
   <script src="main.js" defer></script>
 </body>
 </html>

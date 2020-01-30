@@ -1,2 +1,31 @@
 .preloader { display: none }
 #container.fetching .preloader{ display: block }
+.flex{
+    display: flex;
+}
+.row {
+    flex-direction: row;
+    
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-item-1{
+    flex: 1;
+}
+img{
+    width: 400px;
+}
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.item{
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+section {
+  display: flex;
+}
+    
